@@ -147,8 +147,7 @@
         <form class="validation-form" novalidate>
           <div class="row">
             <div class="col-md-6 mb-3">
-              <label for="name">스터디 명 : <span th:text="${study.getStudyTitle()}">스터디 명</span></label> <!-- 스터디 명을 동적으로 표시 -->
-              <input type="text" class="form-control" id="name" placeholder="스터디 명" th:value="${study.getStudyTitle()}" readonly>
+              <label for="name">스터디 명 : <span th:text="${study.getStudyTitle()}"></span></label> <!-- 스터디 명을 동적으로 표시 -->
             </div>
           </div>
           <div class="row">
@@ -161,20 +160,21 @@
           </div>
           <hr class="mb-4">
 
-          <div class="mb-4"></div>
-          <button id="join-study" class="btn btn-primary" style="margin-right: 10px;">스터디 가입</button> <!-- 스터디 가입 버튼 -->
-          <button id="view-applicants" class="btn btn-primary" style="margin-right: 10px;">가입 신청자 보기</button> <!-- 가입 신청자 보기 버튼 -->
-          <button id="modify-study" class="btn btn-primary">스터디 수정</button> <!-- 스터디 수정 버튼 -->
-          <button id="leave-study" class="btn btn-danger" style="margin-left: 100px;">스터디 탈퇴</button> <!-- 스터디 탈퇴 버튼 -->
+          <div class="mb-4">
+          <button id="join-study" class="btn btn-secondary" style="margin-right: 10px;">스터디 가입</button> <!-- 스터디 가입 버튼 -->
+          <button id="view-applicants" class="btn btn-secondary" style="margin-right: 10px;">가입 신청자 보기</button> <!-- 가입 신청자 보기 버튼 -->
+          <button id="modify-study" class="btn btn-secondary"> <a href="study_update.html" style="color: white;">스터디 수정</a></button> <!-- 스터디 수정 버튼 -->
+          <button id="leave-study" class="btn btn-secondary" style="margin-left: 100px;">스터디 탈퇴</button> <!-- 스터디 탈퇴 버튼 -->
+        </div>
         </form>
       </div>
       <div class="participants form-control">
-        <h3 class="applicants">스터디 가입자</h3>
-        <div class="participants-table">
+        <h3 class="applicants" style="margin-bottom: -10px;">스터디 가입자</h3>
+        <div class="participants-table" style="height: 800PX;">
           <table>
             <thead>
               <tr>
-                <th>Nickname</th> <!-- 닉네임 컬럼 -->
+                <th>Nicknames</th> <!-- 닉네임 컬럼 -->
               </tr>
             </thead>
             <tbody id="participant-list">
@@ -182,7 +182,8 @@
             </tbody>
           </table>
         </div>
-        <button id="chat-room" class="btn btn-success" style="margin-bottom: 20px;">채팅방 입장</button> <!-- 채팅방 입장 버튼 -->
+        <hr class="mb-4" style="position: relative; bottom: 0PX;">
+        <button id="chat-room" class="btn btn-secondary position-absolute bottom-0 start-50 translate-middle-x" style="margin-bottom: 50PX; "><a href="chat.html" style="color: white;">채팅방 입장</a></button> <!-- 채팅방 입장 버튼 -->
       </div>
     </div>
   </div>

@@ -21,60 +21,6 @@
     <link rel="stylesheet" href="../assets/css/table.css">
     <link rel="stylesheet" href="../assets/css/tabs.css">
     <link rel="stylesheet" href="../assets/css/chatbot.css">
-<style>
-#chat-container {
-    width: 400px; /* 300px + 100px */
-    height: 600px; /* 400px + 300px */
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #fff;
-    position: fixed;
-    bottom: 0px; /* Place above the icon */
-    right: 20px;
-    z-index: 1000;
-}
-
-#message-container {
-    flex-grow: 1;
-    padding: 1rem;
-    overflow-y: auto;
-    height: calc(100% - 120px); /* Adjust based on total height minus header and footer */
-}
-
-.input-group {
-    display: flex;
-    width: 100%;
-}
-
-.input-group input {
-    flex-grow: 1;
-}
-
-.input-group button {
-    flex-shrink: 0;
-}
-
-.message {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 70%;
-}
-
-.user-message {
-    background-color: #e0f7fa;
-    align-self: flex-end;
-    text-align: right;
-}
-
-.bot-message {
-    background-color: #e0e0e0;
-    align-self: flex-start;
-    text-align: left;
-}
-</style>
   </head>
 
 <body>
@@ -132,7 +78,7 @@
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop id="bg-video">
-          <source src="../assets/images/course-video.mp4" type="video/mp4" />
+          <source src="../assets/images/study_main.mp4" type="video/mp4" />
       </video>
 
       <div class="video-overlay header-text">
@@ -140,8 +86,8 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="caption">
-              <h6 style="position: relative; left: 150px;">Hello Students</h6>
-              <h2 style="color: white; position:relative; left: 150px;">Welcome to <SPAN style="color: yellow;">IEUMSAE</SPAN></h2>
+              <h6 style="position: relative; left: 150px; top: -100px;">Hello Students</h6>
+              <h2 style="color: white; position:relative; left: 150px; top: -100px;">Welcome to <SPAN style="color: yellow;">IEUMSAE</SPAN></h2>
               <!--<div class="main-button-red" style="left: 100px;">
                   <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
               </div>-->
@@ -702,7 +648,7 @@
 <div id="chatbot-container" style="display: none;">
   <div id="chat-container" class="card">
       <div id="close-button" style="text-align: right; padding: 5px;">
-          <button class="btn btn-secondary" id="close-chat">X</button>
+          <button class="btn btn-secondary" id="close-chat" style="color: black;">X</button>
       </div>
       <div id="message-container" class="card-body"></div>
       <div id="input-container" class="card-footer">
