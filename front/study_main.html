@@ -111,58 +111,15 @@
   <tbody>
     <tr>
       <th scope="row" th:each="study : ${studyList}">1</th>
-      <td ><a th:href="@{/viewSelectedStudy/{studyIdx}(studyIdx=${study.getStudyIdx()})}"
-        th:text="${study.getStudyTitle()}">종항 옷벗기기</a></td>
+      <td>
+          <a th:href="@{/study_detail/{studyIdx}(studyIdx=${study.getStudyIdx()})}"
+             th:text="${study.getStudyTitle()}">종항 옷벗기기</a>
+      </td>
       <td th:text="${study.getStudyCreatorIdx()}">차현우</td>
-    </tr>
+  </tr>
+  
     <tr>
-      <th scope="row" th:each="study : ${studyList}">1</th>
-      <td ><a th:href="@{/viewSelectedStudy/{studyIdx}(studyIdx=${study.getStudyIdx()})}"
-        th:text="${study.getStudyTitle()}">종항 옷벗기기</a></td>
-      <td th:text="${study.getStudyCreatorIdx()}">차현우</td>
-    </tr>
-    <tr>
-      <th scope="row" th:each="study : ${studyList}">1</th>
-      <td ><a th:href="@{/viewSelectedStudy/{studyIdx}(studyIdx=${study.getStudyIdx()})}"
-        th:text="${study.getStudyTitle()}">종항 옷벗기기</a></td>
-      <td th:text="${study.getStudyCreatorIdx()}">차현우</td>
-    </tr>
-    <tr>
-      <th scope="row" th:each="study : ${studyList}">1</th>
-      <td ><a th:href="@{/viewSelectedStudy/{studyIdx}(studyIdx=${study.getStudyIdx()})}"
-        th:text="${study.getStudyTitle()}">종항 옷벗기기</a></td>
-      <td th:text="${study.getStudyCreatorIdx()}">차현우</td>
-    </tr>
-    <tr>
-      <th scope="row" th:each="study : ${studyList}">1</th>
-      <td ><a th:href="@{/viewSelectedStudy/{studyIdx}(studyIdx=${study.getStudyIdx()})}"
-        th:text="${study.getStudyTitle()}">종항 옷벗기기</a></td>
-      <td th:text="${study.getStudyCreatorIdx()}">차현우</td>
-    </tr>
-    <tr>
-      <th scope="row" th:each="study : ${studyList}">1</th>
-      <td ><a th:href="@{/viewSelectedStudy/{studyIdx}(studyIdx=${study.getStudyIdx()})}"
-        th:text="${study.getStudyTitle()}">종항 옷벗기기</a></td>
-      <td th:text="${study.getStudyCreatorIdx()}">차현우</td>
-    </tr>
-    <tr>
-      <th scope="row" th:each="study : ${studyList}">1</th>
-      <td ><a th:href="@{/viewSelectedStudy/{studyIdx}(studyIdx=${study.getStudyIdx()})}"
-        th:text="${study.getStudyTitle()}">종항 옷벗기기</a></td>
-      <td th:text="${study.getStudyCreatorIdx()}">차현우</td>
-    </tr>
-    <tr>
-      <th scope="row" th:each="study : ${studyList}">1</th>
-      <td ><a th:href="@{/viewSelectedStudy/{studyIdx}(studyIdx=${study.getStudyIdx()})}"
-        th:text="${study.getStudyTitle()}">종항 옷벗기기</a></td>
-      <td th:text="${study.getStudyCreatorIdx()}">차현우</td>
-    </tr>
-    <tr>
-      <th scope="row" th:each="study : ${studyList}">1</th>
-      <td ><a th:href="@{/viewSelectedStudy/{studyIdx}(studyIdx=${study.getStudyIdx()})}"
-        th:text="${study.getStudyTitle()}">종항 옷벗기기</a></td>
-      <td th:text="${study.getStudyCreatorIdx()}">차현우</td>
-    </tr>
+      
   </tbody>
 </table>
 
