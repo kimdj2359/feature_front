@@ -64,6 +64,7 @@
                         <li class="scroll-to-section"><a href="./index.html" class="active">Home</a></li>
                         <li><a href="./study_main.html">STUDY</a></li>
                         <li><a href="./community_main.html">COMMUNITY</a></li>
+                        <li><a href="./review_main.html">review</a></li>
                         <li><a href="./contact_us.html">Contact Us</a></li> 
                     </ul>        
                     <a class='menu-trigger'>
@@ -113,9 +114,9 @@
       <th scope="row" th:each="study : ${studyList}">1</th>
       <td>
           <a th:href="@{/study_detail/{studyIdx}(studyIdx=${study.getStudyIdx()})}"
-             th:text="${study.getStudyTitle()}">종항 옷벗기기</a>
+             th:text="${study.getStudyTitle()}"></a>
       </td>
-      <td th:text="${study.getStudyCreatorIdx()}">차현우</td>
+      <td th:text="${study.getStudyCreatorIdx()}"></td>
   </tr>
   
     <tr>
